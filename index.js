@@ -3,32 +3,32 @@ const app = express();
 
 
 app.get("/", function(req,res){
-    res.send("<h1>Bem vindo ao zoológico!</h1>");
+    res.send("<h1>Bem vindo a sua conta Bancaria</h1>");
 })
 
 
-app.get("/animais", function(req,res){
-    res.send("<h1>Voce pode cadastrar um animal!</h1>");
+app.get("/conta", function(req,res){
+    res.send("<h1>Voce pode realizar um saque ou um deposito!</h1>");
 })
 
 
-app.get("/consulta/:parametro", function(req,res){
+app.get("/conta/saque", function(req,res){
 
-    res.send("retorno consulta:" + req.params.parametro);
+    res.send("saque realizado" + req.params.parametro);
 })
 
 
 
-app.get("/cadastroanimal/{:nome}", function(req,res){
+// app.get("/cadastroanimal/{:nome}", function(req,res){
 
-    var nome = req.params.nome;
-    if (nome){
-        res.send("<h1>animal " + nome + " criado!</h1>");
-    }else{
-        res.send("animal criado!");
-    }
+//     var nome = req.params.nome;
+//     if (nome){
+//         res.send("<h1>animal " + nome + " criado!</h1>");
+//     }else{
+//         res.send("animal criado!");
+//     }
     
-})
+// })
 app.listen(2007, function(erro){
     if (erro){
         console.log("Ocorreu um erro!");

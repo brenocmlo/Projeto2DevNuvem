@@ -1,0 +1,22 @@
+{
+  "name": "projeto2devnuvem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenocmlo/Projeto2DevNuvem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenocmlo/Projeto2DevNuvem/issues"
+  },
+  "homepage": "https://github.com/brenocmlo/Projeto2DevNuvem#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
