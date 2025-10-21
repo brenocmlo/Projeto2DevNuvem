@@ -14,12 +14,12 @@ app.get("/conta", function(req,res){
 
 app.get("/conta/saque", function(req,res){
 
-    res.send("saque realizado" + req.params.parametro);
+    res.send("saque realizado");
 })
 
 
 
-// app.get("/cadastroanimal/{:nome}", function(req,res){
+// app.get("/cadastroconta/{:nome}", function(req,res){
 
 //     var nome = req.params.nome;
 //     if (nome){
