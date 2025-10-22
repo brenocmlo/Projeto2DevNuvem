@@ -12,9 +12,9 @@ app.get("/conta", function(req,res){
 })
 
 
-app.get("/conta/saque", function(req,res){
+app.get("/conta/deposito", function(req,res){
 
-    res.send("saque realizado");
+    res.send("deposito realizado");
 })
 
 
